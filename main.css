@@ -1,5 +1,80 @@
-header{
-       
+
+/*Para inicializar la pagina sin margenes iniciales*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#fondodepantalla{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-position: top;
+    }
+
+nav{
+   width: 100%;
+   height: 100px;
+   background-color: cadetblue;
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   align-items: center;
+
+   #logotipo{
+          margin-left: 80px;
+          padding-bottom: 30px;
+           }
+
+   .enlacesmenu 
+        {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           align-items: center;
+           gap: 40px;
+
+     .idiomas{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+  
+           } 
+
+      
+     a{
+        text-decoration: none;
+        color: white;
+       }    
+      
+      .gris{
+        color: gray;
+           }
+
+      .negrita{
+        color: black;
+              }     
+
+     .registro{
+         display: grid;
+         grid-template-columns: 1fr 1px 1fr;
+              }
+
+      a{
+         justify-self: center; 
+        }         
+
+     #barrita{
+         height: 100%;
+         width: 1px;
+         background-color: black;
+             }          
+  }     
+
+}
+
+/*header{
        height: 130px;
        padding-top: 0px;
        padding-bottom: 90px;
@@ -10,16 +85,22 @@ header{
         color:white;
         font-size: 15px;
         font-family:sans-serif;
+        margin: 0px;
+               
       }
    #logo{
-    justify-self: center;
-    
-
+    background-color: brown;
+    padding-top: 30px;
+    display: inline;
+    margin-left: 3%;
+    align-items: center;
         }   
 
     #interior{
+      display: inline;
+    background-color: blueviolet;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: left;
     align-items: center;
     }
@@ -32,10 +113,11 @@ header{
       background-position: top;
       background-size: contain;
       width: 200%;
-  }
+  }*/
 
 
     #galeria8 {
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 1%;
@@ -68,7 +150,7 @@ header{
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       column-gap: 2%;
       position: relative;
-      margin-top: 550px;
+      margin-top: 70px;
   
       .enventa{
         max-height: 50%;
@@ -85,7 +167,7 @@ header{
   color:black;
   font-size: 25px;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 120px;
   
 }
 
